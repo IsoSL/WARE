@@ -1,9 +1,9 @@
 /* Base Styles and Variables */
 :root {
-    --primary-color: #6495ED;
+    --primary-color: #000000;
     --primary-light: #000000;
     --primary-dark: #ffffff;
-    --secondary-color: #FF6B6B;
+    --secondary-color: #ffffff;
     --text-color: #333;
     --text-light: #666;
     --bg-color: #FFFFFF;
