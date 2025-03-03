@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ware - Gaming Enhancement Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Ware</h1>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="nav-buttons">
+                <button id="themeToggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="loginBtn" class="login-btn">
+                    <i class="fas fa-user"></i>
+                    <span>Login</span>
+                </button>
+                <button id="cartBtn" class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <div class="menu-icon" id="menuIcon">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Level Up Your Gaming Experience</h1>
+                <p>Enhance your gameplay with our premium tools and accessories</p>
+                <button class="cta-button">Explore Products</button>
+            </div>
+            <div class="hero-image">
+                <img src="/api/placeholder/500/300" alt="Gaming setup">
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section id="products" class="products">
+            <h2>Featured Products</h2>
+            <div class="product-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="software">Software</button>
+                <button class="filter-btn" data-filter="hardware">Hardware</button>
+                <button class="filter-btn" data-filter="accessories">Accessories</button>
+            </div>
+            <div class="product-grid">
+                <!-- Product cards will be dynamically added here via JavaScript -->
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <h2>Why Choose Ware</h2>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Performance Boost</h3>
+                    <p>Optimize your system for maximum gaming performance</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Secure & Trusted</h3>
+                    <p>All products are verified and safe to use</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Our team is always ready to assist you</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-sync"></i>
+                    <h3>Regular Updates</h3>
+                    <p>Stay up-to-date with the latest features</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="pricing">
+            <h2>Pricing Plans</h2>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Basic</h3>
+                    <div class="price">$9.99<span>/month</span></div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Core gaming tools</li>
+                        <li><i class="fas fa-check"></i> Basic performance boost</li>
+                        <li><i class="fas fa-check"></i> Email support</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Premium features</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Priority updates</li>
+                    </ul>
+                    <button class="pricing-btn">Get Started</button>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="popular-tag">Most Popular</div>
+                    <h3>Premium</h3>
+                    <div class="price">$19.99<span>/month</span></div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> All Basic features</li>
+                        <li><i class="fas fa-check"></i> Advanced optimization</li>
+                        <li><i class="fas fa-check"></i> 24/7 priority support</li>
+                        <li><i class="fas fa-check"></i> Premium add-ons</li>
+                        <li><i class="fas fa-check"></i> Early access to updates</li>
+                    </ul>
+                    <button class="pricing-btn">Get Started</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Ultimate</h3>
+                    <div class="price">$29.99<span>/month</span></div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> All Premium features</li>
+                        <li><i class="fas fa-check"></i> Maximum performance</li>
+                        <li><i class="fas fa-check"></i> Dedicated support agent</li>
+                        <li><i class="fas fa-check"></i> All premium add-ons</li>
+                        <li><i class="fas fa-check"></i> Exclusive beta access</li>
+                    </ul>
+                    <button class="pricing-btn">Get Started</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Stay in the Game</h2>
+                <p>Subscribe to our newsletter for the latest updates and exclusive offers</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Ware</h3>
+                <p>The ultimate gaming enhancement platform for serious gamers.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Ware. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Login to Your Account</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="form-options">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+                <button type="submit" class="login-submit">Login</button>
+                <div class="or-divider">
+                    <span>or</span>
+                </div>
+                <div class="social-login">
+                    <button type="button" class="google-btn">
+                        <i class="fab fa-google"></i> Continue with Google
+                    </button>
+                    <button type="button" class="discord-btn">
+                        <i class="fab fa-discord"></i> Continue with Discord
+                    </button>
+                </div>
+                <p class="signup-link">Don't have an account? <a href="#">Sign up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content cart-modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cartItems" class="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-summary">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">$0.00</span>
+                </div>
+                <button id="checkoutBtn" class="checkout-btn">Proceed to Checkout</button>
+                <button id="continueShoppingBtn" class="continue-shopping-btn">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle"></i>
+            <div class="toast-message">Item added to cart!</div>
+        </div>
+        <div class="toast-progress"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
